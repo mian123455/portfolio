@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+  <style>
+    body {
+      background-color: #081b29;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+    }
+    .contact-form {
+      background-color: #0d2b43;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    .form-control {
+      background-color: #112e42;
+      border: none;
+      color: white;
+    }
+    .form-control::placeholder {
+      color: #ccc;
+    }
+    .btn-custom {
+      background-color: #00abf0;
+      border: none;
+      color: white;
+    }
+    .btn-custom:hover {
+      background-color: #0096cc;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container py-5">
+    <h2>Contact Me</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" class="form-control" id="subject" placeholder="Enter subject">
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Type your message here..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-custom btn-block">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
